@@ -1,0 +1,24 @@
+td {
+    padding: 10px 20px;
+    outline: thin solid
+}
+
+.highlight {
+    background: #96cef4;
+}
+
+#btn1 {
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #DC3545;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 40px;
+    border: 2px solid #DC3545;
+    margin: auto;
+}

@@ -35,31 +35,6 @@ window.addEventListener('load', ()=>{
     }
 });
 
-// Function to add buttons for all activities
-// function addbtn(activity, activityBtn){    
-//     if (activity.name == "Tic Tac Toe") {
-//         activityBtn.onclick= function(){
-//             window.location.href = "TicTacToe.html";
-//         }
-//     } 
-//     else if (activity.name == "Bingo") {
-//         activityBtn.onclick= function(){
-//             window.location.href = "bingo.html";
-//         }
-//     }  
-//     else if (activity.name == "Quiz") {
-//         activityBtn.onclick= function(){
-//             window.location.href = "quiz.html";
-//         }
-//     }  
-//     else if (activity.name == "Sudoku") {
-//         activityBtn.onclick= function(){
-//             window.location.href= "sudoku.html";
-//         }
-//     }   
-// }
-
-// Function to create various activity cards
 function addActivities(activity){
     let activityName = document.createElement('p');
     let activityImage = document.createElement('img'); 

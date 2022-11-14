@@ -36,7 +36,40 @@ window.addEventListener('load', ()=>{
 });
 
 // Function to add buttons for all activities
-function addbtn(activity, activityBtn){    
+// function addbtn(activity, activityBtn){    
+//     if (activity.name == "Tic Tac Toe") {
+//         activityBtn.onclick= function(){
+//             window.location.href = "TicTacToe.html";
+//         }
+//     } 
+//     else if (activity.name == "Bingo") {
+//         activityBtn.onclick= function(){
+//             window.location.href = "bingo.html";
+//         }
+//     }  
+//     else if (activity.name == "Quiz") {
+//         activityBtn.onclick= function(){
+//             window.location.href = "quiz.html";
+//         }
+//     }  
+//     else if (activity.name == "Sudoku") {
+//         activityBtn.onclick= function(){
+//             window.location.href= "sudoku.html";
+//         }
+//     }   
+// }
+
+// Function to create various activity cards
+function addActivities(activity){
+    let activityName = document.createElement('p');
+    let activityImage = document.createElement('img'); 
+    let activityBtn = document.createElement('button');
+    let activityBtnDiv = document.createElement('div');
+    let item = document.createElement('div');
+    let maindiv = document.getElementById("items");
+    item.classList.add("item");
+   
+    activityBtn.innerHTML = "Join Now";
     if (activity.name == "Tic Tac Toe") {
         activityBtn.onclick= function(){
             window.location.href = "TicTacToe.html";
@@ -57,23 +90,6 @@ function addbtn(activity, activityBtn){
             window.location.href= "sudoku.html";
         }
     }   
-}
-
-// Function to create various activity cards
-function addActivities(activity){
-    let activityName = document.createElement('p');
-    let activityImage = document.createElement('img'); 
-    let activityBtn = document.createElement('button');
-    let activityBtnDiv = document.createElement('div');
-    let item = document.createElement('div');
-    let maindiv = document.getElementById("items");
-    item.classList.add("item");
-   
-    addbtn(activity, activityBtn);
-    activityBtn.innerHTML = "Join Now";
-    activityBtn.onclick= function(){
-        addbtn(activity, activityBtn);
-    }
     maindiv.appendChild(item);
     item.appendChild(activityImage);
     item.appendChild(activityName);

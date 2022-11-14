@@ -33,7 +33,7 @@ For example,
 
 	"Hello"/ “Hi”/ “Hey”: "Hey! How are you?" 
 
-      	"I am good. What about you?": "I am good too. Are you a sports enthusiast?" 
+      "I am good. What about you?": "I am good too. Are you a sports enthusiast?" 
 
 	"Yes, big time. How about you?": "Oh totally. I love football.", 
 

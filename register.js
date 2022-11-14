@@ -34,7 +34,7 @@ submit.addEventListener('click', function(e) {
         errors.push("Please Enter Your Password");
     }
     if(password.length <8) {
-        alert('Please enter password with more than 8 characters!');
+        errors.push('Please enter password with more than 8 characters!');
     }
 
     let show_err = document.querySelector(".show-err");

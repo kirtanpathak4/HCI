@@ -84,6 +84,16 @@
         </center>
 <!--Data start here-->
         <script src="mentalhealth.js"></script>
+          <script>
+            window.addEventListener('load', function() {
+
+                let checkBio = JSON.parse(localStorage.getItem('user'));
+
+                if (checkBio == null) {
+                    window.location.href = 'login.html';
+                }
+            })
+        </script>
 
 </body>
 

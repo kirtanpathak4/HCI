@@ -1,6 +1,6 @@
-##DP5: Implementation 
+DP5: Implementation 
 
-#Team 6: The Collaboration Space 
+Team 6: The Collaboration Space 
 
 Please find below the steps to use our website - The Collaboration Space 
 
@@ -24,7 +24,7 @@ Note: Password should be 8 characters or more.
 
 Installations: No external installations are required. 
 
-#Limitations:  
+Limitations:  
 
 The chat box in the Meetups section is hardcoded for limited responses only. 
 For example, 

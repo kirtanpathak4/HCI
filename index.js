@@ -6,9 +6,3 @@ window.addEventListener('load', function() {
 });
 
 
-let btn = document.getElementById('btn');
-btn.addEventListener('click', function() {
-    localStorage.removeItem("user");
-    window.location.href = "login.html";
-});
-

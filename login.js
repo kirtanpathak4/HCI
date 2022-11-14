@@ -1,32 +1,32 @@
-const btn = document.getElementById("btn");
+const var4 = document.getElementById("btn");
 
-let show_err = document.querySelector(".show-err");
+let var1 = document.querySelector(".show-err");
 
-btn.addEventListener('click', function(e) {
+var4.addEventListener('click', function(e) {
     e.preventDefault();
     let email = document.querySelectorAll('input')[0].value.trim();
     let password  = document.querySelectorAll('input')[1].value.trim();
-    let checkUser = JSON.parse(localStorage.getItem("userData"));
-    let success_tracker = [];
-    if(checkUser == null) {
-        show_err.innerHTML = "You don't have an account. Please Sign Up.";
+    let var2 = JSON.parse(localStorage.getItem("userData"));
+    let var3_list = [];
+    if(var2 == null) {
+        var1.innerHTML = "You don't have an account. Please Sign Up.";
     } else {
-        for(let i = 0; i < checkUser.length; i++){
-            if(checkUser[i].email == email && checkUser[i].password == password){
-                success_tracker.push(checkUser[i].name, email, password);
+        for(let i = 0; i < var2.length; i++){
+            if(var2[i].email == email && var2[i].password == password){
+                var3_list.push(var2[i].name, email, password);
                 break;
             }
         }
-        if(success_tracker.length > 0){
+        if(var3_list.length > 0){
             let userDetail = {
-            'name' : success_tracker[0],
-            'email' : success_tracker[1]
+            'name' : var3_list[0],
+            'email' : var3_list[1]
             }
 
             localStorage.setItem("user", JSON.stringify(userDetail));
             window.location.href = "index.html";
         }else{
-            show_err.innerHTML = "You don't have an account. Please Sign Up.";
+            var1.innerHTML = "You don't have an account. Please Sign Up.";
             document.querySelectorAll('input')[0].value = "";
             document.querySelectorAll('input')[1].value = "";
         }

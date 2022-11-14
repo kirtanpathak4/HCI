@@ -1,10 +1,10 @@
 window.addEventListener('load', function() {
-    let getOnLoad = JSON.parse(localStorage.getItem("userData"));
-        if(getOnLoad != null) { 
-            localStorage.setItem("reLoad", JSON.stringify(getOnLoad));
-            let checkUser = JSON.parse(localStorage.getItem("reLoad"));
-            checkUser.forEach(function(item, index) {
-                users.push(item)
+    let var1 = JSON.parse(localStorage.getItem("userData"));
+        if(var1 != null) { 
+            localStorage.setItem("reLoad", JSON.stringify(var1));
+            let var2 = JSON.parse(localStorage.getItem("reLoad"));
+            var2.forEach(function(item, index) {
+                var3_list.push(item)
             })
             localStorage.removeItem("reLoad")
 
@@ -12,9 +12,9 @@ window.addEventListener('load', function() {
 })
 
 
-users = [];
-const submit = document.getElementById("btn");
-submit.addEventListener('click', function(e) {
+var3_list = [];
+const var4 = document.getElementById("btn");
+var4.addEventListener('click', function(e) {
     e.preventDefault();
     
     let name = document.querySelectorAll('input')[0].value.trim();
@@ -22,35 +22,35 @@ submit.addEventListener('click', function(e) {
     let password = document.querySelectorAll('input')[2].value.trim();
 
 
-    let errors = [];
+    let var5_list = [];
     
     if(name.length == 0) {
-        errors.push("Please Enter Your Name");
+        var5_list.push("Please Enter Your Name");
     }
     if(email.length == 0) {
-        errors.push("Please Enter Your Email");
+        var5_list.push("Please Enter Your Email");
     }
     if(password.length == 0) {
-        errors.push("Please Enter Your Password");
+        var5_list.push("Please Enter Your Password");
     }
     if(password.length <8) {
-        errors.push('Please enter password with more than 8 characters!');
+        var5_list.push('Please enter password with more than 8 characters!');
     }
 
-    let show_err = document.querySelector(".show-err");
+    let var6 = document.querySelector(".show-err");
     
-    if(errors.length != 0) {
-        for(let i = 0; i < errors.length; i++) {
+    if(var5_list.length != 0) {
+        for(let i = 0; i < var5_list.length; i++) {
 
-           show_err.innerHTML =  errors.join("<br>");
+           var6.innerHTML =  var5_list.join("<br>");
         }
     }
     
-    if(errors.length == 0 ) {
+    if(var5_list.length == 0 ) {
         
-        let makeUserNull = JSON.parse(localStorage.getItem("userData"));
+        let var7 = JSON.parse(localStorage.getItem("userData"));
 
-        if(makeUserNull == null) {
+        if(var7 == null) {
 
             let person = {
                 'name' : name,
@@ -58,11 +58,11 @@ submit.addEventListener('click', function(e) {
                 'password' : password
             }
 
-            users.push(person);
+            var3_list.push(person);
 
-            localStorage.setItem("userData", JSON.stringify(users));
+            localStorage.setItem("userData", JSON.stringify(var3_list));
 
-            show_err.innerHTML = "Registered Successfully.";
+            var6.innerHTML = "Registered Successfully.";
             document.querySelectorAll('input')[0].value = "";
             document.querySelectorAll('input')[1].value = "";
             document.querySelectorAll('input')[2].value = "";
@@ -70,17 +70,17 @@ submit.addEventListener('click', function(e) {
 
             let success_tracker = [];
 
-            for(let i = 0; i < makeUserNull.length; i++){
+            for(let i = 0; i < var7.length; i++){
 
-				if(makeUserNull[i].email == email){
-					success_tracker.push(makeUserNull[i].email);
+				if(var7[i].email == email){
+					success_tracker.push(var7[i].email);
 					break;
 				}
 			}
 
             if(success_tracker.length > 0){
 
-                show_err.innerHTML = `User with the ${email} Already Exit.`;
+                var6.innerHTML = `User with the ${email} Already Exit.`;
                 document.querySelectorAll('input')[0].value = "";
                 document.querySelectorAll('input')[1].value = "";
                 document.querySelectorAll('input')[2].value = "";
@@ -92,11 +92,11 @@ submit.addEventListener('click', function(e) {
                     'password' : password
                 }
     
-                users.push(person);
+                var3_list.push(person);
     
-                localStorage.setItem("userData", JSON.stringify(users));
+                localStorage.setItem("userData", JSON.stringify(var3_list));
     
-                show_err.innerHTML = "Registered Succesfully";
+                var6.innerHTML = "Registered Succesfully";
                 document.querySelectorAll('input')[0].value = "";
                 document.querySelectorAll('input')[1].value = "";
                 document.querySelectorAll('input')[2].value = "";

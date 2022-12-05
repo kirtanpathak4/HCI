@@ -2,7 +2,7 @@
 let btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
     localStorage.removeItem("user");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 });
 
 //List of various activities for user to choose from

@@ -6,131 +6,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="letstalk.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!--Navbar starts here-->
+    
+    <!-- Header for Fun Activities page -->
     <div class="container-fluid p-0 m-0">
-        <div class="header-wrapper" style="background-image: url('Images/y.jpeg'); background-blend-mode: lighten; background-color: rgba(255,255,255,0.4);">
+        <div class="header-wrapper"
+            style="background-image: url('Images/y.jpeg'); background-blend-mode: lighten; background-color: rgba(255,255,255,0.4);">
             <div class="row">
                 <div class="col-sm-2">
                     <a href="#">
                         <img src="Images/logo2.svg" style="margin: 0px" class="img-responsive" height="200px" /></a>
                 </div>
                 <div class="col-sm-10">
-                    <h1 class="d-block text-center" style="font-weight: bold;";>The Collaboration Space</h1>
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto">
-                                <li class="nav-item boxx">
-                                    <a class="nav-link" href="./index.html">HOME</a>
-                                </li>
-                                <li class="nav-item boxx">
-                                    <a class="nav-link" href="meetup.html">MEETUPS</a>
-                                </li>
-                                <li class="nav-item boxx">
-                                    <a class="nav-link" href="funActivities.html">FUN ACTIVITIES</a>
-                                </li>
-                                <li class="nav-item boxx">
-                                    <a class="nav-link" href="mentalhealth.html">MENTAL HEALTH</a>
-                                </li>
-                                <li class="nav-item boxx">
-                                    <a class="nav-link" href="login.html">LOGOUT</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <h1 class="d-block text-center" style="font-weight: bold;" ;>The Collaboration Space</h1>
                 </div>
             </div>
-        </div>
-<!--profile section starts here-->
-        <div class="row">
-            <div class="col-sm-12 col-md-4 p-0 m-0">
-                <center>
-                    <div>
-                        <img src="prof.PNG" class="img-responsive" height="200" width="200"><br>
-                        <span style="font-weight: bold;">Name: </span><span id="username"></span><br>
-                        <span style="font-weight: bold;">Company: </span><span>ABC</span><br>
-                        <span style="font-weight: bold;">Job Title: </span><span>SDE</span>
-                    </div>
-                    <br>
 
-                    
-                </center>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item boxx">
+                        <a class="nav-link" href="register.html" style="background-color: #DC3545; color:white">SIGN
+                            UP</a>
+                    </li>
+                    <li class="nav-item boxx">
+                        <a class="nav-link" href="login.html" style="background-color: #DC3545; color:white">LOGIN</a>
+                    </li>
+                </ul>
             </div>
-            <!--Articles starts here-->
-            <div class="col-sm-12 col-md-4 p-0 m-0">
-                <center>
-                    <a href="https://enterprisersproject.com/article/2021/7/hybrid-work-advantages">
-                    <img src="middle2.PNG" height="200" width="350">
-                    </a>
-                    <br>
-                    <h5><a href="https://enterprisersproject.com/article/2021/7/hybrid-work-advantages">Advantages of Hybrid Work Label</a></h5>
-                    <br>
-                    <a href="https://zapier.com/blog/remote-work-challenges/">
-                    <img src="graph2.PNG" height="200" width="350">
-                    </a>
-                    <br>
-                    <h5><a href="https://zapier.com/blog/remote-work-challenges/">What's your biggest struggle with working remotely?</a></h5>
-                </center>
-            </div>
-            <!--Video starts here-->
-            <div class="col-sm-12 col-md-4 p-0 m-0">
-                <center>
-                    <div class="pt-5">
-                        <iframe width="350" height="200" src="https://www.youtube.com/embed/hXhEE3NAQ-A" frameborder="0" allowfullscreen></iframe>
-                        <br><br>
-                        <p>A web application for remote workers to build strong relations with their colleagues or team members by indulging in fun activities/meet-ups, participate in online games and get mental help. </p>
-                    </div>
-                    <!--Query page starts here-->
-                        <div class="card">
-                            <form>
-                                <h3>Any Queries?</h3>
-                                <p>Send us your queries to solve!</p>
-                                <div class="queryn">
-                                        <input type="text" required="required">
-                                        <span>Name</span>
-                                </div>
-                                <div class="queryn">
-                                        <input type="text" required="required">
-                                        <span>E-mail</span>
-                                </div>
-                                <div class="queryn">
-                                    <input type="text" required="required">
-                                    <span>Message</span>
-                                </div>
-                                    <input type="reset" value="Submit" style="color: white; background-color: #DC3545; border: #DC3545; width: 100px;">
-                            </form> 
-                        </div>
-                </center>
+        </nav>
+        <!-- Card for title of page -->
+        <div class="card" id="rect"
+            style="font-weight: bold; margin:0 auto ;text-align: center; width: 70%; color: white; background-color: #D9A5B3;">
+            <div class="">
+                <h4 style="font-weight: bold;">The three tasks that "The Collaboration Space" offers:</h4>
             </div>
         </div>
-    </div>
-    <br /><br />
-    <div class="items" id="items">
-    </div>
-    <script>
-        window.addEventListener('load', function() {
+        <div class="items" id="items">
+        </div>
 
-            let var1 = JSON.parse(localStorage.getItem('user'));
+        <!-- This will check the condition that user is logged in or not -->
+        <script>
+            // window.addEventListener('load', function () {
 
-            if (var1 == null) {
-                window.location.href = 'login.html';
-            }
-        })
-    </script>
-    <script src="index.js"></script>
+            //     let checkBio = JSON.parse(localStorage.getItem('user'));
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            //     if (checkBio == null) {
+            //         window.location.href = 'index.html';
+            //     }
+            // })
+        </script>
+        <!-- List of cards containing the different activities available -->
+        <script src="index.js"></script>
+        <!-- <script src="initialPage.js"></script> -->
+
 </body>
 
 </html>

@@ -13,7 +13,7 @@ let noOfCorrectAnswers = 0
 // Database of all quiz questions
 const quizQuestions = [
     {
-        question: "How many months have 28 days?",
+        question: "1. How many months have 28 days?",
         a: "2",
         b: "1",
         c: "12",
@@ -21,7 +21,7 @@ const quizQuestions = [
         correct: "c",
     },
     {
-        question: "The answer is really big.",
+        question: "2. The answer is really big.",
         a: "THE ANSWER",
         b: "Really big",
         c: "An elephant",
@@ -29,7 +29,7 @@ const quizQuestions = [
         correct: "a",
     },
     {
-        question: "What is the most visited tourist attraction in the world?",
+        question: "3. What is the most visited tourist attraction in the world?",
         a: "Eiffel Tower",
         b: "Statue of Liberty",
         c: "Great Wall of China",
@@ -37,7 +37,7 @@ const quizQuestions = [
         correct: "a",
     },
     {
-        question: "What’s the heaviest organ in the human body?",
+        question: "4. What’s the heaviest organ in the human body?",
         a: "Brain",
         b: "Liver",
         c: "Skin",
@@ -45,7 +45,7 @@ const quizQuestions = [
         correct: "b",
     },
     {
-        question: "What is the oldest soft drink in the United States?",
+        question: "5. What is the oldest soft drink in the United States?",
         a: "Coca Cola",
         b: "Pepsi",
         c: "Dr. Pepper",
@@ -53,7 +53,7 @@ const quizQuestions = [
         correct: "c",
     },
     {
-        question: "What is the highest-grossing video game franchise to date?",
+        question: "6. What is the highest-grossing video game franchise to date?",
         a: "Mario",
         b: "Pokemon",
         c: "Call Of Duty",
@@ -61,7 +61,7 @@ const quizQuestions = [
         correct: "b",
     },
     {
-        question: "Which company was the first to reach 1 trillion dollars?",
+        question: "7. Which company was the first to reach 1 trillion dollars?",
         a: "Microsoft",
         b: "Apple",
         c: "Amazon",
@@ -69,7 +69,7 @@ const quizQuestions = [
         correct: "b",
     },
     {
-        question: "Which of these films uses futuristic HCI?",
+        question: "8. Which of these films uses futuristic HCI?",
         a: "Speed",
         b: "Minority Report",
         c: "Terminator",
@@ -77,7 +77,7 @@ const quizQuestions = [
         correct: "b",
     },
     {
-        question: "Which of the following are examples of paradigms for interaction?",
+        question: "9. Which of the following are examples of paradigms for interaction?",
         a: "Personal Computing",
         b: "HyperText",
         c: "Multi-Modality",
@@ -86,7 +86,7 @@ const quizQuestions = [
     },
     
     {
-        question: "Good Design is just cool graphics. How far is it true?",
+        question: "10. Good Design is just cool graphics. How far is it true?",
         a: "True",
         b: "False",
         c: "Not clear",

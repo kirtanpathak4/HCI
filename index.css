@@ -1,31 +1,18 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0%;
-    margin: 0;
-}
-
-.btns button{
-    float: right;
-    background-color: #007BFF;
-    margin: 0%;
-    margin-left: 1%;
-}
-span{
-    font-size: x-large;
 }
 
 button{
     min-width: 100px;
+    margin: 2%;
+    text-align: center;
     justify-content: center;
     border: none;
+    border-radius: 2px;
     height: 25px;
     background-color: #DC3545;
-    min-height: 40px;
-    margin: 2%;
-    border-radius: 2px;
-    text-align: center;
     color: white;
-
+    min-height: 40px;
 }
 
 .items{
@@ -33,12 +20,11 @@ button{
 }
 
 .item{
-    padding: 1%;
     display: inline-block;
+    width: auto;
     border: 1px solid gray;
+    padding: 1%;
     margin: 2%;
-    width: 250px;
-
 }
 
 .item img{
@@ -47,31 +33,3 @@ button{
     max-width: 250px;
     max-height: 150px;
 }
-.morebtns{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-}
-
-.morebtns button{
-    min-height: 40px;
-}
-
-.desc-btn{
-    background-color: #007BFF;
-}
-.nameofproduct{
-    font-size: larger;
-}
-.logout{
-    float: right;
-}
-.btns{
-    margin-top: 1%;
-}
-
-
-
-
-
-

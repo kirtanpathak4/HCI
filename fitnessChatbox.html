@@ -34,13 +34,10 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="index.html">HOME</a>
+                                    <a class="nav-link" href="initialPage.html">HOME</a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="meetup.html">BACK</a>
-                                </li>
-                                <li class="nav-item boxx">
-                                    <a class="nav-link" href="meetup.html">MEETUPS</a>
+                                    <a class="nav-link" href="meetup.html" style="background-color: #DC3545; color:white">MEETUPS</a>
                                 </li>
                                 <li class="nav-item boxx">
                                     <a class="nav-link" href="funActivities.html">FUN ACTIVITIES</a>
@@ -59,6 +56,7 @@
 
         </div>
         <br/><br/>
+        <a class="nav-link" href="meetup.html" style="text-align: left; margin-left:150px; width: 70px; height: 40px; background-color: #DC3545; color: white;">BACK</a>
         <div class="card" id="rect" style="font-weight: bold; margin:0 auto ;text-align: center; width: 40%; color: white; background-color: #D9A5B3;">
             <div class="card-body">
                 <h4 style="font-weight: bold;">Take a break and join a meet up room</h4>
@@ -77,8 +75,10 @@
                 <img src="Images/Fitness1.jpeg" style="margin: 0px" class="img-responsive" height="250px" width="300px" /></a>
             </div>
             <div class="col-md-8">
+                <h6 style="margin-left: 50px;"> ChatBox </h6>
                 <p id="chatLog"><br><br></p>
                 <input placeholder="Enter you message.." id="fitnessChatbox" type="text" onkeydown="if (event.keyCode == 13) {fitnessChatbot()}">
+                <button onclick="fitnessChatbot()">Send</button>
             </div>
         </div>
 </body>
@@ -103,7 +103,9 @@
     function fitnessChatbot() {
         var user = document.getElementById("fitnessChatbox").value;
         document.getElementById("fitnessChatbox").value = "";
-        document.getElementById("chatLog").innerHTML += user + "<br>";
+        let result = user.fontcolor("red");
+        result = result.bold();
+        document.getElementById("chatLog").innerHTML += result + "<br>";
         if (user in know) {
             document.getElementById("chatLog").innerHTML += know[user] + "<br>";
         } else {

@@ -10,4 +10,8 @@
     background-color: #fff;
     border: 1px #000 solid;
     font-weight: bold;
+    font-size: 10px !;
+  }
+  span{
+    font-size:medium;
   }

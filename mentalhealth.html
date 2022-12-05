@@ -33,59 +33,84 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="index.html">HOME</a>
+                                    <a class="nav-link" href="initialPage.html"><span title="Go to Home page"> HOME</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="meetup.html">MEETUPS</a>
+                                    <a class="nav-link" href="meetup.html"><span title="Chat with Colleagues">MEETUPS</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="funActivities.html">FUN ACTIVITIES</a>
+                                    <a class="nav-link" href="funActivities.html"><span title="Play Games & Fun Activities">FUN ACTIVITIES</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="mentalhealth.html">MENTAL HEALTH</a>
+                                    <a class="nav-link" href="mentalhealth.html" style="background-color: #DC3545; color:white"><span title="Get Mental Health Solutions">MENTAL HEALTH</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="login.html">LOGOUT</a>
+                                    <a class="nav-link" href="faqs.html"><span title="Frequently Asked Questions">FAQs</span></a>
+                                </li>
+                                <li class="nav-item boxx">
+                                    <a class="nav-link" href="index.html" id="logoutbtn"><span title="Logout">LOGOUT</span></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
+        </div>
+    </div>
+        <br />
+        <a class="nav-link" href="initialPage.html" style="text-align: left; margin-left:120px; width: 70px; height: 40px; background-color: #DC3545; color: white;">BACK</a>
 
-        </div>
-        <br /><br />
-        <div class="card mb-2" id="rect"
-            style="font-weight: bold; margin:0 auto ;text-align: center; width: 40%; color: white; background-color: #D9A5B3;">
-            <h4 style="font-weight: bold;">Check some improving physical and mental health podcasts</h4>
-        </div>
-<!--Search start here-->
         <center>
+            <div class="mb-3">
+
+                <a href="./appointment.html">
+
+                    <button type="button" class="px-3">Book Appointment</button>
+                </a>
+    
+                <a href="./appointmentdone.html">
+    
+                    <button type="button" class="px-3">My Appointments</button>
+                </a>
+                <!-- <a href="./faqs.html">
+    
+                    <button type="button" class="">FAQs</button>
+                </a> -->
+            </div>
+        <div class="card mb-3" id="rect"
+            style="font-weight: bold; margin:0 auto ;text-align: center; width: 50%; color: white; background-color: #D9A5B3;">
+            <h4 style="font-weight: bold;">Check some  physical and mental health podcasts</h4>
+        </div>
+        <!--Search start here-->
 
             <input type="text" id="myInput" onkeyup="funcdone()" placeholder="Search for podcasts!!!"
-                title="Type in a name" style="
+                title="Type in a name" list="PL" style="
             width: 50%;
             font-size: 20px;
-            padding: 12px 20px 12px 40px;
+            padding: 6px 6px 6px 20px;
             border: 1px solid rgb(0, 0, 0);
-            margin-bottom: 12px;
           ">
-<!--Last buttons start here-->
+            <datalist id="PL">
+                <option value="Meditation: At Home">Meditation: At Home </option>
+                <option value="Performing Yoga">Performing Yoga </option>
+                <option value="Healthy Items Cooking Tutorials">Healthy Items Cooking Tutorials </option>
+                <option value="Following Proper Food Diet">Following Proper Food Diet </option>
+                <option value="Refreshing Music">Refreshing Music </option>
+                <option value="Having a Perfect Sleep">Having a Perfect Sleep </option>
+                <option value="Standup Laughter Show">Standup Laughter Show </option>
+                <option value="Avoid Depression">Avoid Depression </option>
+            </datalist>
+            <!--Last buttons start here-->
             <div class="items" id="items">
+                <span id="err"></span>
             </div>
-            <a href="./appointment.html">
 
-                <button type="button" class="px-3 m-3">Book Appointment</button>
-            </a>
-            <a href="./faqs.html">
-
-                <button type="button" class="">FAQs</button>
-            </a>
         </center>
-<!--Data start here-->
+        <!--Data start here-->
         <script src="mentalhealth.js"></script>
-          <script>
-            window.addEventListener('load', function() {
+
+        <script>
+            window.addEventListener('load', function () {
 
                 let checkBio = JSON.parse(localStorage.getItem('user'));
 

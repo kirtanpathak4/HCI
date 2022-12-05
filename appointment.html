@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="appointment.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
 </head>
 
 <body>
@@ -24,137 +34,106 @@
                 </div>
                 <div class="col-sm-10">
                     <h1 class="d-block text-center" style="font-weight: bold;" ;>The Collaboration Space</h1>
-                    <nav class="navbar navbar-expand-lg navbar-light">
+                    <nav class="navbar navbar-expand-lg navbar-light" style="margin-left: 150px;">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto">
+                            <ul class="navbar-nav ">
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="index.html">HOME</a>
+                                    <a class="nav-link" href="initialPage.html"><span title="Go to Home page"> HOME</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="mentalhealth.html">BACK</a>
+                                    <a class="nav-link" href="meetup.html"><span title="Chat with Colleagues">MEETUPS</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="meetup.html">MEETUPS</a>
+                                    <a class="nav-link" href="funActivities.html"><span title="Play Games & Fun Activities">FUN ACTIVITIES</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="funActivities.html">FUN ACTIVITIES</a>
+                                    <a class="nav-link" href="mentalhealth.html" style="background-color: #DC3545; color:white"><span title="Get Mental Health Solutions">MENTAL HEALTH</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="mentalhealth.html">MENTAL HEALTH</a>
+                                    <a class="nav-link" href="faqs.html"><span title="Frequently Asked Questions">FAQs</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" id="btn" href="login.html">LOGOUT</a>
+                                    <a class="nav-link" href="index.html" id="logoutbtn"><span title="Logout">LOGOUT</span></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
-
         </div>
     </div>
-    <br /><br />
+    <br />
+    <a class="nav-link" href="mentalhealth.html" style="display: inline-block; margin-left:120px; width: 70px; height: 40px; background-color: #DC3545; color: white;">BACK</a>
+    <a class="nav-link" href="appointmentdone.html" style="display: inline-block; float: right; margin-right:120px; width: 140px; height: 40px; background-color: #DC3545; color: white;">My Appointments</a>
+    
     <div class="card" id="rect"
         style="font-weight: bold; margin:0 auto ;text-align: center; width: 40%; background-color: #CAB3C1;font-size: 30px;">
         <div class="card-body">
             Book an Appointment!!!
         </div>
     </div>
- <!--Appointment form starts here-->
+    <!--Appointment form starts here-->
     <div class="appointhome">
         <div class="appointhomegeneral">
             <div>
-                <form action="appointmentdone.html" method="post" >
+                <form action="" method="post">
                     <div class="appointhomegrp">
                         <div style="width: 48%; float: left;">
-                            <input type="text"  value="" size="45" aria-required="true"
-                                placeholder="Name"><br>
-                            <input type="email" value="" size="45" aria-required="true"
-                                placeholder="Email"><br>
-                            <input type="tel" value="" size="45" aria-required="true"
-                                placeholder="Phone"><br>
-                            <textarea  cols="40" rows="10"
-                                placeholder="Special notes, concerns, or requirements"></textarea>
+                            <input type="text" name="name" placeholder="Name" required><br>
+                            <input type="email" name="email" placeholder="Email" required disabled><br>
+                            <input type="tel" name="phone" placeholder="Phone" required><br>
+
+                            <textarea cols="40" rows="10" name="notes"
+                                placeholder="Special notes, concerns, or requirements" required></textarea>
                         </div>
                         <div style="width: 48%; float: right;">
-                            <h4>Best suitable way to reach you?</h4>
-                            <p><label>
-                                    <input type="radio"  value="Phone">
-                                    &nbsp;
-                                    <span>Phone</span>
-                                </label>
-                                <label>
-                                    <input type="radio"  value="Email">&nbsp;
-                                    <span>Email</span>
-                                </label>
-                            </p>
-                            <h4>Days of the week available:</h4>
-                            <p>
-                                        <span class="appointhomeitem">
-                                            <label>
-                                                <input type="checkbox" value="Monday">&nbsp;
-                                                <span>Monday</span>
-                                            </label>
-                                        </span>
-                                        <span class="appointhomeitem">
-                                            <label><input type="checkbox" value="Tuesday">&nbsp;<span>Tuesday</span>
-                                            </label>
-                                        </span>
-                                        <span class="appointhomeitem">
-                                            <label>
-                                                <input type="checkbox" value="Wednesday">&nbsp;<span>Wednesday</span>
-                                            </label>
-                                        </span>
-                                        <span class="appointhomeitem"><label>
-                                                <input type="checkbox" value="Thursday">&nbsp;<span>Thursday</span>
-                                            </label>
-                                        </span>
-                                        <span class="appointhomeitem">
-                                            <label>
-                                                <input type="checkbox" value="Friday">&nbsp;<span>Friday</span>
-                                            </label>
-                                        </span>
-
-                            </p>
-                            <h4>Availability for appointment:</h4>
-                            <p><span class="appointhomeitem">
-                                <label>
-                                    <input type="checkbox" value="Morning">&nbsp;Morning
-                                </label>
-                                <label>
-                                        <input type="checkbox" value="Afternoon">&nbsp;Afternoon
-                                </label>
-                                <label>
-                                    <input type="checkbox" value="Evening">&nbsp;Evening
-                            </label>
-                                        </span>
-                            </p>
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' name="schedule" class="form-control"
+                                    placeholder="Select Date and Time" required />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                            <div class="show-err" style="color: red; font-size:small; font-weight:bold"></div>
                         </div>
                     </div>
                     <div style="text-align: center; padding-top: 2em; border-top: 1px solid #DC3545; margin-top: 1em;">
-                        <input type="button" value="Request My Appointment"  onclick="refet();">
-                        <input type="button" value="Cancel" style="margin-left: 10px;" onclick="delet();">
+                        <input type="submit" id="btn" style="width: 200px; height: 40px; background-color: #DC3545; color: white;" value="Request My Appointment">
+
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="appointment.js"></script>
 
     <script>
+        $(function () {
+            $('#datetimepicker1').datetimepicker(
+                {
+                    minDate: new Date()
+                }
+            );
+        });
+
+        $("form").on("submit", function (event) {
+            event.preventDefault();
+            console.log($(this).serialize());
+        });
         $(document).ready(function () {
-                $('input[type=submit]').click(function () {
-                    $('input[type=submit]').toggleClass('red');
-                });
-                });
+            $('input[type=submit]').click(function () {
+                $('input[type=submit]').toggleClass('red');
+            });
+        });
 
         function refet() {
             window.location.href = "./appointmentdone.html";
-            
+
         }
         function delet() {
             var ask = window.confirm("Are you sure you want to cancel this appointment?");

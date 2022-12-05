@@ -2,7 +2,7 @@
 let btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
     localStorage.removeItem("user");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 });
 
 var topicsList = [{

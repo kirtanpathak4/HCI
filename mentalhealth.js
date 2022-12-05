@@ -5,6 +5,11 @@ window.addEventListener('load', function() {
     var1.innerHTML = " " + name + " ...!";
 });
 
+let btn = document.getElementById('logoutbtn');
+btn.addEventListener('click', function() {
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+});
 
 var productlist = 
     [
@@ -119,6 +124,7 @@ function itadd(data){
     item.appendChild(maindivbutton);
     img.src=data.image;
     taggingp.innerHTML = data.name;
+    
 }
 
 function funcdone() {
@@ -128,14 +134,23 @@ function funcdone() {
     maindiv = document.getElementById("items");
     var3 = document.getElementsByClassName("item");
     console.log(var3)
+    let c = 0
     for (i = 0; i < var3.length; i++) {
         a = var3[i].getElementsByTagName("p")[0];
         var5 = a.innerText;
         console.log(var5)
+        if (var4.length == 0){
+            var3[i].style.display = "";
+            document.getElementById("err").innerHTML= ""
+        }
         if (var5.toUpperCase().indexOf(var4) > -1) {
             var3[i].style.display = "";
         } else {
             var3[i].style.display = "none";
+            c = c+ 1
+            if(c == var3.length){
+                document.getElementById("err").innerHTML= "No Items Found"
+            }
         }
     }
 }

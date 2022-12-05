@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+datalist{
+    width: 50% !important;
+    
+}
 button{
     min-width: 100px;
     justify-content: center;

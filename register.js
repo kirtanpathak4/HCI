@@ -30,6 +30,9 @@ var4.addEventListener('click', function(e) {
     if(email.length == 0) {
         var5_list.push("Please Enter Your Email");
     }
+    if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
+        var5_list.push("Invalid Email id Format")
+    }
     if(password.length == 0) {
         var5_list.push("Please Enter Your Password");
     }

@@ -11,3 +11,9 @@ for (f = 0; f < varfaq.length; f++) {
         }
     });
 }
+
+let btn = document.getElementById('logoutbtn');
+btn.addEventListener('click', function() {
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+});

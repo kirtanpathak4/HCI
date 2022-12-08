@@ -94,7 +94,11 @@ function officeBingoCardClicked(id) {
     officeBingoGame();
 }
 
-
+let btn = document.getElementById('logoutbtn');
+btn.addEventListener('click', function() {
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+});
 //This is the function which is first called when body of the html page is load. Here after checking the condition for storing key values we are setting the values and 
 //saving it to the appropriate function and then mapping that to local storage
 

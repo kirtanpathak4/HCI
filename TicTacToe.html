@@ -113,6 +113,13 @@
             }
         })
     </script>
+	<script>
+        let btn = document.getElementById('logoutbtn');
+        btn.addEventListener('click', function() {
+            localStorage.removeItem("user");
+            window.location.href = "index.html";
+        });
+    </script>
     <script src="TicTacToe.js"></script>
 </body>
 

@@ -34,53 +34,56 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="initialPage.html">HOME</a>
+                                    <a class="nav-link" href="initialPage.html"><span title="Go to Home page"> HOME</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="meetup.html" style="background-color: #DC3545; color:white">MEETUPS</a>
+                                    <a class="nav-link" href="meetup.html"><span title="Chat with Colleagues">MEETUPS</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="funActivities.html">FUN ACTIVITIES</a>
+                                    <a class="nav-link" href="funActivities.html"><span title="Play Games & Fun Activities">FUN ACTIVITIES</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="mentalhealth.html">MENTAL HEALTH</a>
+                                    <a class="nav-link" href="mentalhealth.html" style="background-color: #DC3545; color:white"><span title="Get Mental Health Solutions">MENTAL HEALTH</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" id="btn" href="login.html">LOGOUT</a>
+                                    <a class="nav-link" href="faqs.html"><span title="Frequently Asked Questions">FAQs</span></a>
+                                </li>
+                                <li class="nav-item boxx">
+                                    <a class="nav-link" href="index.html" id="logoutbtn"><span title="Logout">LOGOUT</span></a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
-
         </div>
-        <br/><br/>
-        <a class="nav-link" href="meetup.html" style="text-align: left; margin-left:150px; width: 70px; height: 40px; background-color: #DC3545; color: white;">BACK</a>
-        <div class="card" id="rect" style="font-weight: bold; margin:0 auto ;text-align: center; width: 40%; color: white; background-color: #D9A5B3;">
-            <div class="card-body">
-                <h4 style="font-weight: bold;">Take a break and join a meet up room</h4>
-            </div>
+    </div>
+    <br/><br/>
+    <a class="nav-link" href="meetup.html" style="text-align: left; margin-left:150px; width: 70px; height: 40px; background-color: #DC3545; color: white;">BACK</a>
+    <div class="card" id="rect" style="font-weight: bold; margin:0 auto ;text-align: center; width: 40%; color: white; background-color: #D9A5B3;">
+        <div class="card-body">
+            <h4 style="font-weight: bold;">Take a break and join a meet up room</h4>
         </div>
-        <br>
-        <div class="card" id="rect" style="font-weight: normal ; margin:0 auto ;text-align: center; width: 60%; color: white; background-color: #6883BC;">
-            <div class="card-body">
-                <h5 style="font-weight: bold;">Description: </h5>
-                All Global News at one-stop <br> Meet your colleagues and find out interesting global news
-            </div>
+    </div>
+    <br>
+    <div class="card" id="rect" style="font-weight: normal ; margin:0 auto ;text-align: center; width: 60%; color: white; background-color: #6883BC;">
+        <div class="card-body">
+            <h5 style="font-weight: bold;">Description: </h5>
+            All Global News at one-stop <br> Meet your colleagues and find out interesting global news
         </div>
-        <br>
-        <div class="row" style="margin-left: 500px;">
-            <div class="col-md-4">
-                <img src="Images/News1.jpeg" style="margin: 0px" class="img-responsive" height="250px" width="300px" /></a>
-            </div>
-            <div class="col-md-8">
-                <h6 style="margin-left: 50px;"> ChatBox </h6>
-                <p id="chatLog"><br><br></p>
-                <input placeholder="Enter you message.." id="chatBoxNews" type="text" onkeydown="if (event.keyCode == 13) {newsChatbot()}">
-                <button onclick="newsChatbot()">Send</button>
-            </div>
+    </div>
+    <br>
+    <div class="row" style="margin-left: 500px;">
+        <div class="col-md-4">
+            <img src="Images/News1.jpeg" style="margin: 0px" class="img-responsive" height="250px" width="300px" /></a>
         </div>
+        <div class="col-md-8">
+            <h6 style="margin-left: 50px;"> ChatBox </h6>
+            <p id="chatLog"><br><br></p>
+            <input placeholder="Enter you message.." id="chatBoxNews" type="text" onkeydown="if (event.keyCode == 13) {newsChatbot()}">
+            <button onclick="newsChatbot()">Send</button>
+        </div>
+    </div>
 </body>
 
 <!--We have created a simple chat bot kinda functionality related to our topic where we are giving some predefined questions and answers for user testing purposes 

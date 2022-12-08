@@ -113,6 +113,11 @@
             document.getElementById("chatLog").innerHTML += "I am not programmed for this! Can you try some other messages!<br>";
         }
     }
+    let btn = document.getElementById('logoutbtn');
+    btn.addEventListener('click', function() {
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+});
 </script>
 
 </html>

@@ -128,29 +128,28 @@ function itadd(data){
 }
 
 function funcdone() {
-    var var6, var4, a, i, var5;
+    var var6, var4, a, i, var5,noResultMsg;
     var6 = document.getElementById("myInput");
     var4 = var6.value.toUpperCase();
     maindiv = document.getElementById("items");
     var3 = document.getElementsByClassName("item");
     console.log(var3)
-    let c = 0
+
+    noResultMsg = document.getElementById("err");
+    noResultMsg.style.display = "none"
+    let noResult = true
     for (i = 0; i < var3.length; i++) {
         a = var3[i].getElementsByTagName("p")[0];
         var5 = a.innerText;
         console.log(var5)
-        if (var4.length == 0){
-            var3[i].style.display = "";
-            document.getElementById("err").innerHTML= ""
-        }
         if (var5.toUpperCase().indexOf(var4) > -1) {
             var3[i].style.display = "";
+            noResult = false
         } else {
             var3[i].style.display = "none";
-            c = c+ 1
-            if(c == var3.length){
-                document.getElementById("err").innerHTML= "No Items Found"
-            }
         }
+    }
+    if(noResult){
+        noResultMsg.style.display = ""
     }
 }

@@ -37,13 +37,13 @@
                                     <a class="nav-link" href="initialPage.html"><span title="Go to Home page"> HOME</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="meetup.html"><span title="Chat with Colleagues">MEETUPS</span></a>
+                                    <a class="nav-link" href="meetup.html"  style="background-color: #DC3545; color:white"><span title="Chat with Colleagues">MEETUPS</span></a>
                                 </li>
                                 <li class="nav-item boxx">
                                     <a class="nav-link" href="funActivities.html"><span title="Play Games & Fun Activities">FUN ACTIVITIES</span></a>
                                 </li>
                                 <li class="nav-item boxx">
-                                    <a class="nav-link" href="mentalhealth.html" style="background-color: #DC3545; color:white"><span title="Get Mental Health Solutions">MENTAL HEALTH</span></a>
+                                    <a class="nav-link" href="mentalhealth.html"><span title="Get Mental Health Solutions">MENTAL HEALTH</span></a>
                                 </li>
                                 <li class="nav-item boxx">
                                     <a class="nav-link" href="faqs.html"><span title="Frequently Asked Questions">FAQs</span></a>
@@ -115,6 +115,11 @@
             document.getElementById("chatLog").innerHTML += "I am not programmed for this! Can you try some other messages!<br>";
         }
     }
+    let btn = document.getElementById('logoutbtn');
+    btn.addEventListener('click', function() {
+    localStorage.removeItem("user");
+    window.location.href = "index.html";
+});
 </script>
 
 </html>

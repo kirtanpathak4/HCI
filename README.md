@@ -4,7 +4,7 @@ Team 6: The Collaboration Space
 
 Please find below the steps to use our website - The Collaboration Space 
 
-1) Go to this link - https://thecollaborationspace.herokuapp.com/ 
+1) Go to this link - https://kaleidoscopic-sprite-f41e89.netlify.app
 
 2) The login page will appear. If you already have an account, then you can login directly. If not, then first Signup as a new user and then login again to use the website. 
 
